@@ -1,0 +1,53 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt",
+      "type": "cn.lj.auth.config.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.cookie-max-age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.cookie-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "defaultValue": 0,
+      "name": "leyou.jwt.expire",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.pri-key-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.private-key",
+      "type": "java.security.PrivateKey"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.pub-key-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.public-key",
+      "type": "java.security.PublicKey"
+    },
+    {
+      "sourceType": "cn.lj.auth.config.JwtProperties",
+      "name": "leyou.jwt.secret",
+      "type": "java.lang.String"
+    }
+  ]
+}
