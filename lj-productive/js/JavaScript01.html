@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM</title>
+</head>
+<body>
+BOM : Browser Object Model 浏览器对象模型
+
+简而言之，就是将 整个 浏览器当成一个 对象（window），其中，有很多 特殊的东西，可以进行查看。
+
+<hr>
+
+<h1>Window中有什么</h1>
+<button onclick="clearTime()">点我使setTimeout失效</button>
+<script type="text/javascript">
+    /**
+     * 方法的定义：
+     *  function 方法名称([方法参数]){ 方法体 }
+     */
+    function clearTime(){
+        clearTimeout(timeout) ;
+    }
+</script>
+<!--
+    书写一段JS ，以 <script> 开始，以 </script> 结束，其中的内容就可以写JS
+-->
+<script type="text/javascript">
+    // 注释 ： 双斜杠就是注释
+    /**
+     * 也是注释
+     */
+    // 输出 ：
+    console.log( "我是输出") ;
+
+    // 赋值 : 使用let 进行赋值
+    let x = 123 ;
+    // 获取其类型 : 使用typeof 来获取某一个变量的类型
+    console.log( typeof x ) ; // number
+    x = 'x' ;
+    console.log( typeof x ) ; // string
+    x = "哈哈" ;
+    console.log( typeof x ) ; // string
+    x = new Date() ;
+    console.log( typeof  x  ) ; // object
+    x = function (){
+
+    }
+    console.log( typeof  x  ) ; // function
+    x = true ;
+    console.log( typeof  x  ) ; // boolean
+    /**
+     * js 中，可以使用 typeof 获取某一个变量的类型
+     * js 中，可以使用 英文单引号或 英文双引号 来表示 字符串。
+     */
+
+    console.log( window ) ;
+    // alert("123");
+    let timeout = setTimeout( function(){
+        console.log( "setTimeout执行了") ;
+        console.log( 1+1 ) ;
+    } , 5000) ;
+
+    console.log( timeout ) ;
+</script>
+
+
+
+<hr>
+在HTML 标记中，几乎所有的标签都会是以下形式 ： &lt;标签名称&gt;内容&lt;/标签名称&gt;
+
+但是，有一部分标签，没有结束，这种标签被称为自封闭标签。
+
+在HTML 文档中， 大于号和小于号都会被识别成标签的开始或结束，所以，就会有了 转义字符 。
+
+
+
+</body>
+</html>
